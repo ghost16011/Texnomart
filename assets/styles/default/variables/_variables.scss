@@ -1,0 +1,45 @@
+$padding: 0px calc(50% - 470px);
+$f-family-cuprum: 'Cuprum', sans-serif;
+$f-family-ptsans: 'PT Sans', sans-serif;
+$title-font-size: 24px;
+$default-font-size: 18px;
+$default-font-weight: 400;
+$default-font-style: normal;
+
+$basic-red: #EE3643;
+$basic-black: #000000;
+$basic-green: #63A63E;
+$basic-grey: #3D546F;
+$basic-greylight: #C5C5C5;
+$basic-background: #F1F5F7;
+$basic-white: #FFFFFF;
+$special-yellow: #FFBF47;
+$special-blue: #3BBCE3;
+$special-lilac: #DC91D8;
+$special-greenlight: #8ED78F;
+$special-yellowlight: #FFD180;
+$special-greylight: #EAEAEA;
+$success: #5FBB2D;
+$warning: #FFBF47;
+$error: #BA2732;
+$top-navbar-bg-color: #293449;
+$bottom-navbar-bg-color: #32425C;
+$bottom-navbar-box-shadow: inset 0px -5px 0px #293449;
+$middle-bottom-navbar-bg-color: rgba(0, 0, 0, 0.0001);
+$button-hover: #CA2C37;
+$button-active: #BA2732;
+$buy-button-bgcolor-active: #518534;
+$past-cost-color: #A9A9A9;
+$second-con-bg-color: #F9F5F0;
+$top-nav-btn-hover: #242f42;
+$top-nav-btn-active: #161D29;
+$top-nav-btn-f-color-active: rgba(255, 255, 255, 0.5);
+$footer-social-media-links: #212A3A;
+$catalog-settings-header: #F2F6F8;
+$catalog-settings-header-bg-color: #F7F3EC;
+$catalog-submit-input-button: #E5E5E5;
+
+
+:root {
+    --red: #{$basic-red};
+}

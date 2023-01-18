@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// -> color styles
+
+@import "../styles/default/variables/_variables";
+@import "../styles/default/buttons/_buttons";
+@import "../styles/default/other/_other";
+@import "../styles/layout/__layout";
+@import "../styles/home/_home";
+@import "../styles/default/carts/_carts";
+@import "../styles/catalog/_catalog";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+html {
+    background: $basic-white;
+    color: $basic-black;
+
+    font: {
+        family: $f-family-ptsans;
+        size: $default-font-size;
+        weight: $default-font-weight;
+        style: $default-font-style;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        font-size: $title-font-size;
+    }
+    ul, ol {
+        list-style: {
+            type: none;
+        }
+    }
+    a {
+        color: $basic-black;
+        text-decoration: none;
+    }
+}
+
+.body {
+    & {
+        &::-webkit-scrollbar {background: #1C1C28;}
+        &::-webkit-scrollbar-button {background: #818181;}
+        &::-webkit-scrollbar-button:active {background: $basic-grey;}
+        &::-webkit-scrollbar-thumb {background: #818181;}
+        &::-webkit-scrollbar-thumb:active {background: $basic-grey;}
+    }
+}

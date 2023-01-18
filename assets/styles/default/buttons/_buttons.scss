@@ -1,0 +1,23 @@
+.input-default, .button-default {
+    width: 192px;
+    height: 38px;
+    background: $basic-red;
+    color: $basic-white;
+    border: none;
+    cursor: pointer;
+    font: {
+        family: 'Cuprum';
+        weight: 400;
+        size: 14px;
+    }
+    line-height: 18px;
+}
+.input-default, .button-default {
+    &:hover {
+        transition: all 0.3s ease;
+        background: $button-hover;
+    }
+    &:active {
+        background: $button-active;
+    }
+}

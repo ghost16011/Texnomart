@@ -1,0 +1,393 @@
+.header {
+    display: block;
+    .header__wrapper {
+        display: block;
+        .header__wrapper__container {
+            display: flex;
+            flex-flow: column;
+            .nav {
+                background: rgb(242 242 242);
+                min-height: 320px;
+                .nav__top-list {
+                    display: flex;
+                    flex-flow: row;
+                    height: 42px;
+                    background: $top-navbar-bg-color;
+                    padding: $padding;
+                    button, input {
+                        height: 42px;
+                        font-size: 18px;
+                    }
+                    li:nth-child(1) {
+                        .home-logo {
+                            .home-logo__btn {
+                                background: {
+                                    image: url(/assets/photos/symbols/logo-technomart.svg);
+                                    repeat: no-repeat;
+                                    position: center;
+                                }
+                                width: 220px;
+                                height: 47px;
+                                border-bottom: 5px solid $button-active;
+                            }
+                        }
+                    }
+                    li:nth-child(2) {
+                        .nav__top-list__form {
+                            input[type="search"] {
+                                all: unset;
+                                width: 219px;
+                                height: 42px;
+                                background: none;
+                                font-family: "Cuprum", sans-serif;
+                                color: white;
+                                padding: 0px 0px 0px 42px;
+                                background: {
+                                    image: url(/assets/photos/symbols//icon-search\ покой.svg);
+                                    repeat: no-repeat;
+                                    position: 17px 12px;
+                                }
+                                &::placeholder {
+                                    color: $basic-white;
+                                }
+                                &:hover {
+                                    transition: all 0.3s linear;
+                                    background: {
+                                        image: url(/assets/photos/symbols/icon-search.svg);
+                                    }
+                                }
+                                &:focus {
+                                    color: $basic-black;
+                                    &::placeholder {
+                                        color: $basic-black;
+                                    }
+                                    background: {
+                                        color: $basic-white;
+                                        image: url(/assets/photos/symbols/icon-search\ active.svg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(3),
+                    li:nth-child(4) {
+                        .zakladki-bgcolor,
+                        .korzina-bgcolor {
+                            span {
+                                position: relative;
+                                left: 15px;
+                                top: 1px;
+                            }
+                            background: none;
+                            background: {
+                                repeat: no-repeat;
+                                position: 29px 13px;
+                            }
+                            width: 155px;
+                            &:hover {
+                                transition: all 0.3s ease;
+                                background: $top-nav-btn-hover;
+                                background: {
+                                    repeat: no-repeat;
+                                    position: 29px 13px;
+                                }
+                            }
+                            &:active {
+                                color: $top-nav-btn-f-color-active;
+                                background: $top-nav-btn-active;
+                                background: {
+                                    repeat: no-repeat;
+                                    position: 29px 13px;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(3) {
+                        .zakladki-bgcolor {
+                            span {
+                                position: relative;
+                                left: 16px;
+                                top: 1px;
+                            }
+                            background-image: url(/assets/photos/symbols/icon-bookmark\ покой.svg);
+                            &:hover {
+                                background-image: url(/assets/photos/symbols/icon-bookmark.svg);
+                            }
+                            &:active {
+                                background-image: url(/assets/photos/symbols/icon-bookmark-active.svg);
+                            }
+                        }
+                    }
+                    li:nth-child(4) {
+                        .korzina-bgcolor {
+                            span {
+                                position: relative;
+                                left: 13px;
+                                top: 1px;
+                            }
+                            background-image: url(/assets/photos/symbols/icon-cart\ покой.svg);
+                            &:hover {
+                                background-image: url(/assets/photos/symbols/icon-cart.svg);
+                            }
+                            &:active {
+                                background-image: url(/assets/photos/symbols/icon-cart-active.svg);
+                            }
+                        }
+                    }
+                    li:nth-child(5) {
+                        >.nav__top-list__link {
+                            .confirm-purchase-bgcolor {
+                                background: {
+                                    color: $basic-green;
+                                }
+                                width: 149px;
+                                &:hover {
+                                    background: {
+                                        color: $success;
+                                    }
+                                }
+                                &:active {
+                                    color: $top-nav-btn-f-color-active;
+                                }
+                                span {
+                                    position: relative;
+                                    left: 1px;
+                                    top: 1px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .nav__middle-list {
+                    display: flex;
+                    flex-flow: row;
+                    align-items: center;
+                    padding: $padding;
+                    height: 157px;
+                    li:nth-child(1) {
+                        .nav__middle-list__title {
+                            color: $basic-red;
+                            line-height: 23px;
+                            width: 200px;
+                            position: relative;
+                            left: 31px;
+                            top: 0px;
+                            font: {
+                                family: $f-family-cuprum;
+                                style: italic;
+                                size: 16px;
+                                weight: 400;
+                            }
+                        }
+                    }
+                    li:nth-child(2) {
+                        width: 70%;
+                        .nav__middle-list__link {
+                            position: relative;
+                            left: 121px;
+                            top: 1px;
+                            display: flex;
+                            flex-flow: column;
+                            background: {
+                                image: url(/assets/photos/symbols/icon-phone.svg);
+                                repeat: no-repeat;
+                                position: 38px 14px;
+                            }
+                            .tel-link {
+                                background: none;
+                                border: 3px solid $basic-white;
+                                color: $basic-red;
+                                width: 270px;
+                                height: 45px;
+                                line-height: 30px;
+                                font: {
+                                    weight: 700;
+                                    size: 21px;
+                                }
+                                span {
+                                    position: relative;
+                                    left: 13px;
+                                    top: 0px;
+                                }
+                            }
+                            .office-location {
+                                position: relative;
+                                left: 0px;
+                                top: 4px;
+                                width: 270px;
+                                line-height: 24px;
+                                color: $bottom-navbar-bg-color;
+                                text-align: center;
+                                font: {
+                                    family: $f-family-cuprum;
+                                    size: 14px;
+                                    weight: 400;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(3),
+                    li:nth-child(4) {
+                        .nav__middle-list__link {
+                            position: relative;
+                            left: 0px;
+                            top: -11px;
+                            .login-link,
+                            .register-link {
+                                background: $basic-white;
+                                color: $basic-black;
+                                height: 45px;
+                                font-size: 21px;
+                                &:hover {
+                                    color: $basic-red;
+                                }
+                                &:active {
+                                    color: $basic-greylight;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(3) {
+                        margin-right: 10px;
+                        .nav__middle-list__link {
+                            .login-link {
+                                width: 121px;
+                                background: {
+                                    image: url(/assets/photos/symbols/icon-login.svg);
+                                    repeat: no-repeat;
+                                    position: 19px 15px;
+                                }
+                                &:hover {
+                                    background-image: url(/assets/photos/symbols/icon-login-hover.svg);
+                                }
+                                &:active {
+                                    background-image: url(/assets/photos/symbols/icon-login.svg);
+                                }
+                                span {
+                                    position: relative;
+                                    left: 9px;
+                                    top: 0px;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(4) {
+                        .nav__middle-list__link {
+                            .register-link {
+                                width: 150px;
+                            }
+                        }
+                    }
+
+                }
+                .nav__bottom-list {
+                    display: flex;
+                    flex-flow: row;
+                    flex-wrap: wrap;
+                    padding: $padding;
+                    li {
+                        .nav__bottom-list__link {
+                            .nav__bottom-list__link__btn {
+                                background: $bottom-navbar-bg-color;
+                                color: $basic-white;
+                                width: 100px;
+                                height: 60px;
+                                font-size: 18px;
+                                line-height: 24px;
+                                border-bottom: 4px solid $top-nav-btn-active;
+                                text-align: center;
+                                &:hover {
+                                    background: $top-navbar-bg-color;
+                                }
+                                &:active {
+                                    color: $basic-greylight;
+                                }
+                                span {
+                                    position: relative;
+                                    top: 0px;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(1) {
+                        .nav__bottom-list__link {
+                            .nav__bottom-list__link__btn {
+                                width: 135px;
+                                span {
+                                    top: 0px;
+                                    left: 14px;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(2) {
+                        .nav__bottom-list__link {
+                            .nav__bottom-list__link__btn {
+                                width: 130px;
+                                span {
+                                    top: 0px;
+                                    left: 0px;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(3) {
+                        .nav__bottom-list__link {
+                            .nav__bottom-list__link__btn {
+                                width: 104px;
+                                span {
+                                    top: 0px;
+                                    left: 3px;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(4) {
+                        .nav__bottom-list__link {
+                            .nav__bottom-list__link__btn {
+                                width: 117px;
+                                span {
+                                    top: 0px;
+                                    left: 4px;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(5) {
+                        .nav__bottom-list__link {
+                            .nav__bottom-list__link__btn {
+                                width: 189px;
+                                span {
+                                    top: 0px;
+                                    left: 0px;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(6) {
+                        .nav__bottom-list__link {
+                            .nav__bottom-list__link__btn {
+                                width: 134px;
+                                span {
+                                    top: 0px;
+                                    left: -9px;
+                                }
+                            }
+                        }
+                    }
+                    li:nth-child(7) {
+                        .nav__bottom-list__link {
+                            .nav__bottom-list__link__btn {
+                                width: 130px;
+                                span {
+                                    top: 0px;
+                                    left: -21px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

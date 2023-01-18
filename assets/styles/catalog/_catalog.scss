@@ -1,0 +1,742 @@
+.catalog {
+    .header__wrapper {
+        .header__wrapper__container {
+            .nav {
+                .nav__top-list {
+                    li:nth-child(4) {
+                        .nav__top-list__link {
+                            .korzina-bgcolor {
+                                background-color: $basic-red;
+                            }
+                        }
+                    }
+                }
+                .nav__middle-list {
+                    li:nth-child(3) {
+                        margin-right: 0px;
+                        .catalog-page-logged-in {
+                            .login-link {
+                                width: 299px;
+                                background: {
+                                    image: url(/assets/photos/symbols/icon-logout.svg);
+                                    position-x: 262px;
+                                }
+                                &:hover {
+                                    transition: all 0.3s ease;
+                                    background: {
+                                        image: url(/assets/photos/symbols/icon-logout-hover.svg);
+                                    }
+                                    .user-icon {
+                                        background: {
+                                            image: url(/assets/photos/symbols/icon-user-hover.svg);
+                                        }
+                                    }
+                                }
+                                &:active {
+                                    background: {
+                                        image: url(/assets/photos/symbols/icon-logout.svg);
+                                    }
+                                    .user-icon {
+                                        background: {
+                                            image: url(/assets/photos/symbols/icon-user.svg);
+                                        }
+                                    }
+                                }
+                                .user-icon {
+                                    width: 20px;
+                                    height: 18px;
+                                    position: absolute;
+                                    left: 16px;
+                                    background: {
+                                        image: url(/assets/photos/symbols/icon-user.svg);
+                                        repeat: no-repeat;
+                                        position: center;
+                                    }
+                                }
+                                .user-name {
+                                    left: 0;
+                                    top: 0;
+                                }
+                            }
+                            .user-purchases {
+                                display: flex;
+                                text-align: left;
+                                position: absolute;
+                                left: 44px;
+                                top: 41px;
+                                width: 250px;
+                                color: $bottom-navbar-bg-color;
+                                font: {
+                                    family: $f-family-cuprum;
+                                    size: 16px;
+                                }
+                                background: {
+                                    image: url(/assets/photos/symbols/dot.svg);
+                                    repeat: no-repeat;
+                                    position: 89px 7px;
+                                }
+                                .user-data {
+                                    text-align: right;
+                                    position: absolute;
+                                    left: 107px;
+                                    top: 0px;
+                                }
+                            }
+                            &:hover {
+                                .user-purchases {
+                                    color: $basic-red;
+                                    background: {
+                                        image: url(/assets/photos/symbols/dot-hover.svg);
+                                    }
+                                }       
+                            }
+                        }
+                    }
+                    li:nth-child(4) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.body-layout {
+    .body-layout__wrapper {
+        .perforators {
+            display: flex;
+            flex-flow: column;
+            padding: 0px calc(50% - 470px);
+            .perforators__links {
+                .perforators__links__list {
+                    display: flex;
+                    flex-flow: row;
+                    padding-top: 18px;
+                    column-gap: 27px;
+                    li {
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                        line-height: 18px;
+                        .perforators__links__list__home,
+                        .perforators__links__list__catalog,
+                        .perforators__links__list__tools,
+                        .perforators__links__list__perfs {
+                            font: {
+                                family: $f-family-ptsans;
+                                size: 13px;
+                            }
+                        }
+                    }
+                    li:nth-child(1) {
+                        .perforators__links__list__home {
+                            position: relative;
+                            left: 0px;
+                            top: 0px;
+                            width: 14px;
+                            height: 12px;
+                            background: {
+                                image: url(/assets/photos/symbols/icon-home.svg);
+                                repeat: no-repeat;
+                                position: center;
+                            }
+                        }
+                    }
+                    li:nth-child(2),
+                    li:nth-child(3),
+                    li:nth-child(4) {
+                        &::before {
+                            content: "";
+                            width: 14px;
+                            height: 12px;
+                            background-image: url(/assets/photos/symbols/icon-right-small.svg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                    li:nth-child(2) {
+                        &::before {
+                            position: relative;
+                            left: -17px;
+                            top: 0px;
+                        }
+                    }
+                    li:nth-child(3) {
+                        &::before {
+                            position: relative;
+                            left: -14px;
+                            top: 0px;
+                        }
+                    }
+                    li:nth-child(4) {
+                        &::before {
+                            position: relative;
+                            left: -14px;
+                            top: 0px;
+                        }
+                    }
+                }
+            }
+            .perforators__header {
+                margin-top: 21px;
+                background: $catalog-settings-header;
+                min-height: 89px;
+                display: flex;
+                align-items: center;
+                .perforators__header__title {
+                    position: relative;
+                    left: 26px;
+                    top: 0px;
+                }
+            }
+            .perforators__cost-section {
+                display: flex;
+                flex-flow: row;
+                min-height: 1224px;
+                h2, h3, label {
+                    text-transform: uppercase;
+                    font-family: $f-family-ptsans;
+                }
+                h2 {
+                    line-height: 18px;
+                    font: {
+                        size: 13px;
+                        weight: 400;
+                    }
+                }
+                h3 {
+                    line-height: 30px;
+                    font: {
+                        size: 17px;
+                        weight: 700;
+                    }
+                }
+                label {
+                    line-height: 19px;
+                    font: {
+                        size: 15px;
+                        weight: 400;
+                    }
+                }
+                .perforators__cost-section__input-block {
+                    display: flex;
+                    flex-flow: column;
+                    width: 220px;
+                    .perforators__cost-section__input-block__header {
+                        margin-top: 20px;
+                        width: 100%;
+                        height: 38px;
+                        background: $catalog-settings-header-bg-color;
+                        .perforators__cost-section__input-block__header__title {
+                            position: relative;
+                            left: 17px;
+                            top: 10px;
+                        }
+                    }
+                    .perforators__cost-section__input-block__cost-settings-block {
+                        display: flex;
+                        flex-flow: column;
+                        .perforators__cost-section__input-block__cost-settings-block__cost-block {
+                            display: flex;
+                            flex-flow: column;
+                            .perforators__cost-section__input-block__cost-settings-block__cost-block__title {
+                                margin-top: 13px;
+                                margin-bottom: 11px;
+                            }
+                            .perforators__cost-section__input-block__cost-settings-block__cost-block__cost {
+                                display: flex;
+                                flex-flow: column;
+                                .perforators__cost-section__input-block__cost-settings-block__cost-block__cost__i-range-btn {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 80px;
+                                    background: $catalog-settings-header-bg-color;
+                                    input[type="number"] {
+                                        width: 40px;
+                                        padding: 4px 5px;
+                                        border: 1px solid #bbb;
+                                        border-radius: 3px;
+                                    }
+                                    .perforators__cost-section__input-block__cost-settings-block__cost-block__cost__i-range-btn__btn[type="range"] {
+                                        -webkit-appearance: none;
+                                        width: 180px;
+                                        height: 2px;
+                                        background: #D7DCDE;
+                                        background-image: linear-gradient(rgb(26, 177, 26), rgb(26, 177, 26));
+                                        background-repeat: no-repeat;
+                                        background-size: 50% 100%;
+                                        &::-webkit-slider-thumb {
+                                            -webkit-appearance: none;
+                                            height: 20px;
+                                            width: 20px;
+                                            border-radius: 50%;
+                                            background-image: url(/assets/photos/symbols/filter-button.svg);
+                                            cursor: ew-resize;
+                                            box-shadow: 0 0 2px 0 #555;
+                                            transition: background .3s ease-in-out;
+                                            &:hover {
+                                                background-image: url(/assets/photos/symbols/filter-button.svg);
+                                            }
+                                        }
+                                        &::-webkit-slider-runnable-track {
+                                            -webkit-appearance: none;
+                                            box-shadow: none;
+                                            border: none;
+                                            background: transparent;
+                                        }
+                                    }
+                                }
+                                .perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block {
+                                    display: flex;
+                                    flex-flow: row;
+                                    margin-top: 9px;
+                                    margin-bottom: 15px;
+                                    padding-bottom: 26px;
+                                    column-gap: 7px;
+                                    border-bottom: 1px solid $basic-greylight;
+                                    .perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block__min-cost,
+                                    .perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block__max-cost {
+                                        width: 95px;
+                                        height: 38px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    .perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block__min-cost {
+                                        background: $catalog-settings-header-bg-color;
+                                    }
+                                    .perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block__middle {
+                                        position: relative;
+                                        left: -1px;
+                                        top: 7px;
+                                    }
+                                    .perforators__cost-section__input-block__cost-settings-block__cost-block__cost__block__max-cost {
+                                        background: $catalog-settings-header-bg-color;
+                                    }
+                                }
+                            }
+                        }
+                        .perforators__cost-section__input-block__manufacturers {
+                            display: flex;
+                            flex-flow: column;
+                            padding-bottom: 31px;
+                            border-bottom: 1px solid $basic-greylight;
+                            .perforators__cost-section__input-block__manufacturers__title {
+                                margin-bottom: 16px;
+                            }
+                            .perforators__cost-section__input-block__manufacturers__list {
+                                display: flex;
+                                flex-flow: column;
+                                row-gap: 20px;
+                                li {
+                                    display: flex;
+                                    flex-flow: row;
+                                    align-items: center;
+                                    .check-label {
+                                        display: block;
+                                        position: relative;
+                                        padding-left: 35px;
+                                        cursor: pointer;
+                                        -webkit-user-select: none;
+                                        -moz-user-select: none;
+                                        -ms-user-select: none;
+                                        user-select: none;
+                                        &:hover .checkbox-default ~ .checkmark-new {
+                                            filter: opacity(0.7);
+                                        }
+                                        .checkbox-default {
+                                            position: absolute;
+                                            opacity: 0;
+                                            cursor: pointer;
+                                            height: 0;
+                                            width: 0;
+                                            &:checked ~ .checkmark-new {
+                                                background-image: url(/assets/photos/symbols/checkbox-on.svg);
+                                                background-repeat: no-repeat;
+                                            }
+                                            &:checked ~ .checkmark-new:after {
+                                                display: block;
+                                            }
+                                        }
+                                        .checkmark-new {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            height: 23px;
+                                            width: 26px;
+                                            background-image: url(/assets/photos/symbols/checkbox-off.svg);
+                                            background-repeat: no-repeat;
+                                            &::after {
+                                                content: "";
+                                                position: absolute;
+                                                display: none;
+                                            }
+                                        }
+                                        .check-description {
+                                            position: relative;
+                                            left: 0px;
+                                            top: 2px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .perforators__cost-section__input-block__power {
+                            display: flex;
+                            flex-flow: column;
+                            padding-top: 16px;
+                            .perforators__cost-section__input-block__power__title {
+                                padding-bottom: 17px;
+                            }
+                            .perforators__cost-section__input-block__power__list {
+                                li {
+                                    display: flex;
+                                    .radio-label {
+                                        display: flex;
+                                        flex-flow: row;
+                                        display: block;
+                                        position: relative;
+                                        margin-top: 5px;
+                                        padding-left: 35px;
+                                        margin-bottom: 17px;
+                                        cursor: pointer;
+                                        -webkit-user-select: none;
+                                        -moz-user-select: none;
+                                        -ms-user-select: none;
+                                        user-select: none;
+                                        &:hover .radio-btn ~ .radio-new {
+                                            filter: opacity(0.7);
+                                        }
+                                        .radio-btn {
+                                            position: absolute;
+                                            opacity: 0;
+                                            cursor: pointer;
+                                            height: 0;
+                                            width: 0;
+                                            &:checked ~ .radio-new {
+                                                background: url(/assets/photos/symbols/radio-on.svg);
+                                                background-repeat: no-repeat;
+                                            }
+                                            &:checked ~ .radio-new::after {
+                                                display: block;
+                                            }
+                                        }
+                                        .radio-new {
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                            height: 25px;
+                                            width: 25px;
+                                            background: url(/assets/photos/symbols/radio-off.svg);
+                                            background-repeat: no-repeat;
+                                            &::after {
+                                                content: "";
+                                                position: absolute;
+                                                display: none;
+                                            }
+                                        }
+                                        .radio-description {
+                                            position: relative;
+                                            left: 0px;
+                                            top: 2px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .perforators__cost-section__input-block__submit {
+                            margin-top: 23px;
+                            .perforators__cost-section__input-block__submit__form {
+                                .perforators__cost-section__input-block__submit__form__btn {
+                                    width: 220px;
+                                    height: 38px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text: {
+                                        align: center;
+                                        transform: uppercase;
+                                    }
+                                    background: none;
+                                    cursor: pointer;
+                                    line-height: 18px;
+                                    font: {
+                                        family: $f-family-ptsans;
+                                        size: 13px;
+                                        weight: 400;
+                                    }
+                                    border: 1px solid $catalog-submit-input-button;
+                                    &:hover {
+                                        filter: opacity(0.7);
+                                    }
+                                    &:active {
+                                        filter: opacity(0.5);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .perforators__cost-section__output-block {
+                    display: flex;
+                    flex-flow: column;
+                    padding-left: 19px;
+                    padding-top: 20px;
+                    .perforators__cost-section__output-block__header {
+                        display: flex;
+                        flex-flow: row;
+                        align-items: center;
+                        height: 38px;
+                        background: $catalog-settings-header-bg-color;
+                        padding-left: 21px;
+                        .perforators__cost-section__output-block__header__label {
+                            display: flex;
+                            flex-flow: row;
+                            .perforators__cost-section__output-block__header__label__sorting {
+                                font-size: 13px;
+                                margin-right: 140px;
+                            }
+                            .perforators__cost-section__output-block__header__label__buttons {
+                                display: flex;
+                                flex-flow: row;
+                                .perforators__cost-section__output-block__header__label__buttons__label {
+                                    .input-radio, .input-radio-new {
+                                        background: none;
+                                        cursor: pointer;
+                                        text-transform: uppercase;
+                                        font: {
+                                            family: $f-family-ptsans;
+                                            size: 13px;
+                                            weight: 400;
+                                        }
+                                        line-height: 18px;
+                                    }
+                                    .input-radio {
+                                        position: absolute;
+                                        opacity: 0;
+                                        cursor: pointer;
+                                        height: 0;
+                                        width: 0;
+                                        color: $basic-black;
+                                        &:checked ~ .input-radio-new {
+                                            color: $basic-red;
+                                            filter: opacity(1);
+                                            border: none;
+                                        }
+                                        &:checked ~ .input-radio-new::after {
+                                            display: block;
+                                        }
+                                    }
+                                    .input-radio-new {
+                                        position: relative;
+                                        left: 0;
+                                        top: 0;
+                                        filter: opacity(0.3);
+                                        border-bottom: 1px dashed $basic-red;
+                                        &::after {
+                                            content: "";
+                                            position: absolute;
+                                        }
+                                    }
+                                }
+                                .perforators__cost-section__output-block__header__label__buttons__label:nth-child(2),
+                                .perforators__cost-section__output-block__header__label__buttons__label:nth-child(3) {
+                                    padding-left: 68px;
+                                }
+                                .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b {
+                                    display: flex;
+                                    flex-flow: row;
+                                    align-items: center;
+                                    margin-left: 38px;
+                                    .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label {
+                                        display: block;
+                                        position: relative;
+                                        cursor: pointer;
+                                        width: 25px;
+                                        height: 25px;
+                                        -webkit-user-select: none;
+                                        -moz-user-select: none;
+                                        -ms-user-select: none;
+                                        user-select: none;
+                                        margin-right: 8px;
+                                        .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__top,
+                                        .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__bottom {
+                                            position: absolute;
+                                            opacity: 0;
+                                            cursor: pointer;
+                                            height: 0;
+                                            width: 0;
+                                            &:checked ~ .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__top-new,
+                                            &:checked ~ .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__bottom-new {
+                                                background-repeat: no-repeat;
+                                                background-position: center;
+                                            }
+                                            &:checked ~ .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__top-new {
+                                                background-image: url(/assets/photos/symbols/icon-up-dir-hover.svg);
+                                            }
+                                            &:checked ~ .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__bottom-new {
+                                                background-image: url(/assets/photos/symbols/icon-down-dir-hover.svg);
+                                            }
+                                            &:checked ~ .radio-new::after {
+                                                display: block;
+                                            }
+                                        }
+                                        .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__top-new,
+                                        .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__bottom-new {
+                                            position: absolute;
+                                            left: 0;
+                                            top: 0;
+                                            height: 25px;
+                                            width: 25px;
+                                            background-repeat: no-repeat;
+                                            background-position: center;
+                                            &::after {
+                                                content: "";
+                                                position: absolute;
+                                                display: none;
+                                            }
+                                        }
+                                        .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__top-new {
+                                            background-image: url(/assets/photos/symbols/icon-up-dir.svg);
+                                        }
+                                        .perforators__cost-section__output-block__header__label__buttons__label__rel-t-b__label__bottom-new {
+                                            background-image: url(/assets/photos/symbols/icon-down-dir.svg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .perforators__cost-section__output-block__list {
+                        display: flex;
+                        flex-flow: row;
+                        flex-wrap: wrap;
+                        margin-top: 29px;
+                        column-gap: 22px;
+                        row-gap: 17px;
+                        animation: 1s ease animation_list;
+                        z-index: 0;
+                        @keyframes animation_list {
+                            from {
+                                filter: opacity(0);
+                                transform: translateX(100px);
+                            }
+                            to {
+                                filter: opacity(1);
+                                transform: translateY(0px);
+                            }
+                        }
+                        .product-box__article__title {
+                            text-transform: none;
+                            font-size: 18px;
+                            line-height: 20px;
+                            font-weight: 700;
+                        }
+                    }
+                    .page-2 {
+                        display: none;
+                    }
+                    .page-3 {
+                        display: none;
+                    }
+                    .perforators__cost-section__output-block__product-pagination-block {
+                        display: flex;
+                        flex-flow: row;
+                        margin-top: 49px;
+                        column-gap: 8px;
+
+                        .perforators__cost-section__output-block__product-pagination-block__label {
+                            display: block;
+                            position: relative;
+                            cursor: pointer;
+                            width: 40px;
+                            height: 40px;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            .perforators__cost-section__output-block__product-pagination-block__label__page,
+                            .perforators__cost-section__output-block__product-pagination-block__label__page-next {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                            }
+                            .perforators__cost-section__output-block__product-pagination-block__label__page-new,
+                            .perforators__cost-section__output-block__product-pagination-block__label__page-next-new {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background: none;
+                                border: 1px solid $catalog-submit-input-button;
+                                border-radius: 3px;
+                                height: 36px;
+                                text: {
+                                    align: center;
+                                    transform: uppercase;
+                                }
+                                font: {
+                                    family: $f-family-ptsans;
+                                    size: 13px;
+                                    weight: 400;
+                                }
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                }
+                            }
+                            .perforators__cost-section__output-block__product-pagination-block__label__page {
+                                &:checked ~ .perforators__cost-section__output-block__product-pagination-block__label__page-new {
+                                    background: $basic-red;
+                                    color: $basic-white;
+                                }
+                                &:checked ~ .perforators__cost-section__output-block__product-pagination-block__label__page-new::after {
+                                    display: block;
+                                }
+                            }
+                            .perforators__cost-section__output-block__product-pagination-block__label__page-next {
+                                &:checked ~ .perforators__cost-section__output-block__product-pagination-block__label__page-next-new {
+                                    background: $basic-red;
+                                    color: $basic-white;
+                                }
+                                &:checked ~ .perforators__cost-section__output-block__product-pagination-block__label__page-new::after {
+                                    display: block;
+                                }
+                            }
+                            .perforators__cost-section__output-block__product-pagination-block__label__page-new {
+                                width: 36px;
+                                background: none;
+                            }
+                            .perforators__cost-section__output-block__product-pagination-block__label__page-next-new {
+                                width: 138px;
+                                line-height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .some-facts {
+            display: flex;
+            align-items: center;
+            background: $catalog-settings-header;
+            min-height: 258px;
+            padding: $padding;
+            .some-facts__header {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                min-height: 258px;
+                .some-facts__header__title {
+                    padding-bottom: 21px;
+                }
+            }
+        }
+    }
+}
